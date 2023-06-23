@@ -20,7 +20,7 @@ const winningPositions = [
 function initGame() {
     // Set Current Player to X 
     currentPlayer = 'X';
-    gameInfo.textContent = `Current Player: ${currentPlayer}`;
+    gameInfo.textContent = `Current Player : ${currentPlayer}`;
 
     // Empty Kar Do Boxes 
     gameGrid = ["", "", "", "", "", "", "", "", ""]
@@ -69,7 +69,7 @@ function checkGameOver() {
     });
 
     if (winner !== "") {
-        gameInfo.textContent = `Winner is - ${winner}`;
+        gameInfo.textContent = `Winner is : ${winner}`;
         newGameBtn.classList.add("active");
         return;
     }
